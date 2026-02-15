@@ -1,0 +1,189 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f9;
+  color: #0f2941;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.secao {
+  width: 90vw;
+  margin: 5rem auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .secao {
+    width: 95vw;
+  }
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.titulo h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.titulo span {
+  font-size: 0.85em;
+  color: #b97849;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+
+h2, h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: #917c98;
+}
+
+@media screen and (min-width: 800px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h2, h4 {
+    line-height: 1;
+  }
+}
+
+.centro-secao {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 80vw;
+  height: 450px;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.imagem-pessoa {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #ccd4e6;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+article h4 {
+  text-transform: uppercase;
+  color: #b97849;
+  margin-bottom: 0.25rem;
+}
+
+.titulo {
+  margin-bottom: 0.75rem;
+  color: #4d5c6f;
+}
+
+.texto {
+  max-width: 35em;
+  margin: 0 auto;
+  margin-top: 2rem;
+  line-height: 2;
+  color: #617c98;
+}
+
+.icone {
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: #b97849;
+}
+
+.anterior, .proximo {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-50%);
+  background: #617c98;
+  color: #fff;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: grid;
+  place-items: center;
+  border-color: transparent;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.anterior {
+  left: 0;
+}
+
+.proximo {
+  right: 0;
+}
+
+.anterior:hover, .proximo:hover {
+  background: #b97849;
+}
+
+@media (min-width: 800px) {
+  .texto {
+    max-width: 45em;
+  }
+  .anterior, .proximo {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+article.slideAtivo {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+article.ultimoSlide {
+  transform: translateX(-100%);
+}
+
+article.proximoSlide {
+  transform: translateX(100%);
+}

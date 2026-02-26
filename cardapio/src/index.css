@@ -1,0 +1,210 @@
+/*
+===============
+Estilos Globais (valores fixos)
+===============
+*/
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #f5f5f9; /* cor-cinza-10 */
+    color: #0f2941; /* cor-cinza-1 */
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    color: #617c98; /* cor-cinza-5 */
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    body {
+        font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1;
+    }
+}
+
+/* seção */
+.secao {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+    .secao {
+        width: 95vw;
+    }
+}
+
+/*
+===============
+Cardápio
+===============
+*/
+
+.cardapio {
+    padding: 5rem 0;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sublinhado {
+    width: 5rem;
+    height: 0.25rem;
+    background: #c59d5f; /* cor-ouro */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-botoes {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-filtro {
+    background: transparent;
+    border-color: transparent;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 0 0.5rem;
+    letter-spacing: 1px;
+    padding: 0.375rem 0.75rem;
+    color: #c59d5f; /* cor-ouro */
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border-radius: 0.25rem;
+}
+
+.botao-filtro:hover {
+    background: #c59d5f; /* cor-ouro */
+    color: #ffffff; /* cor-branca */
+}
+
+.secao-central {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 3rem 2rem;
+    justify-items: center;
+}
+
+.item-cardapio {
+    display: grid;
+    gap: 1rem 2rem;
+    max-width: 25rem;
+}
+
+.foto {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border: 0.25rem solid #c59d5f; /* cor-ouro */
+    border-radius: 0.25rem;
+    display: block;
+}
+
+.info-item header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px dotted #617c98; /* cor-cinza-5 */
+}
+
+.info-item h4 {
+    margin-bottom: 0.5rem;
+}
+
+.preco {
+    color: #c59d5f; /* cor-ouro */
+}
+
+.texto-item {
+    margin-bottom: 0;
+    padding-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .item-cardapio {
+        grid-template-columns: 225px 1fr;
+        gap: 0 1.25rem;
+        max-width: 40rem;
+    }
+    .foto {
+        height: 175px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .secao-central {
+        width: 95vw;
+        grid-template-columns: 1fr 1fr;
+    }
+    .foto {
+        height: 150px;
+    }
+}

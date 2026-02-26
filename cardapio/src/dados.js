@@ -1,0 +1,76 @@
+const cardapio = [
+    {
+        id: 1,
+        titulo: "panquecas de leitelho",
+        categoria: "café da manhã",
+        preco: 15.99,
+        imagem: "./imagens/item-1.jpeg",
+        descricao: "Panquecas macias feitas com leitelho, servidas quentinhas com manteiga derretida e calda de maple.",
+    },
+    {
+        id: 2,
+        titulo: "prato duplo",
+        categoria: "almoço",
+        preco: 13.99,
+        imagem: "./imagens/item-2.jpeg",
+        descricao: "Prato reforçado com duas proteínas grelhadas, acompanhamentos do dia e salada fresca.",
+    },
+    {
+        id: 3,
+        titulo: "milkshake godzilla",
+        categoria: "shakes",
+        preco: 6.99,
+        imagem: "./imagens/item-3.jpeg",
+        descricao: "Milkshake gigante de chocolate com sorvete cremoso, chantilly e cobertura extra.",
+    },
+    {
+        id: 4,
+        titulo: "deleite rural",
+        categoria: "café da manhã",
+        preco: 20.99,
+        imagem: "./imagens/item-4.jpeg",
+        descricao: "Café da manhã completo com ovos, pão artesanal, queijo, frutas e geleia caseira.",
+    },
+    {
+        id: 5,
+        titulo: "cheeseburger",
+        categoria: "almoço",
+        preco: 22.99,
+        imagem: "./imagens/item-5.jpeg",
+        descricao: "Hamgurger com queijo, ovos especiais, carne grelhada, legumes salteados e molho da casa.",
+    },
+    {
+        id: 6,
+        titulo: "sonho de oreo",
+        categoria: "shakes",
+        preco: 18.99,
+        imagem: "./imagens/item-6.jpeg",
+        descricao: "Milkshake de Oreo com pedaços de biscoito, sorvete de baunilha e cobertura de chocolate.",
+    },
+    {
+        id: 7,
+        titulo: "excesso de bacon",
+        categoria: "café da manhã",
+        preco: 8.99,
+        imagem: "./imagens/item-7.jpeg",
+        descricao: "Sanduíche de café da manhã com ovos mexidos, muito bacon crocante e queijo derretido.",
+    },
+    {
+        id: 8,
+        titulo: "clássico americano",
+        categoria: "almoço",
+        preco: 12.99,
+        imagem: "./imagens/item-8.jpeg",
+        descricao: "Hambúrguer clássico com carne grelhada, queijo, alface, tomate e molho especial.",
+    },
+    {
+        id: 9,
+        titulo: "companheiro de quarentena",
+        categoria: "shakes",
+        preco: 16.99,
+        imagem: "./imagens/item-9.jpeg",
+        descricao: "Milkshake cremoso de baunilha com caramelo, perfeito para acompanhar qualquer lanche.",
+    }
+];
+
+export default cardapio;
